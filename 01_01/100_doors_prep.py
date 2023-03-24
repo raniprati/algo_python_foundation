@@ -1,8 +1,8 @@
 doors = [False] * 101
 
 for j in range(1, 101):
-    for i in range(1, 101, j):
-        doors[j] = not doors[j]
+    for i in range(j, 101, j):
+        doors[i] = not doors[i]
 
 open = 0
 for i in range(1, 101):
